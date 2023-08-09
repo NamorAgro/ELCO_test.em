@@ -1,0 +1,2331 @@
+@font-face {
+  font-family: 'Geometria';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria'), url('fonts/Geometria.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Italic'), url('fonts/Geometria-Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Thin'), url('fonts/Geometria-Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-ThinItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-ThinItalic'), url('fonts/Geometria-ThinItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-ExtraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-ExtraLight'), url('fonts/Geometria-ExtraLight.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-ExtraLightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-ExtraLightItalic'), url('fonts/Geometria-ExtraLightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Light'), url('fonts/Geometria-Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-LightItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-LightItalic'), url('fonts/Geometria-LightItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Medium'), url('fonts/Geometria-Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-MediumItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-MediumItalic'), url('fonts/Geometria-MediumItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Bold'), url('fonts/Geometria-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-BoldItalic'), url('fonts/Geometria-BoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-ExtraBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-ExtraBold'), url('fonts/Geometria-ExtraBold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-ExtraBoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-ExtraBoldItalic'), url('fonts/Geometria-ExtraBoldItalic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-Heavy'), url('fonts/Geometria-Heavy.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Geometria-HeavyItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geometria-HeavyItalic'), url('fonts/Geometria-HeavyItalic.woff') format('woff');
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus,
+  :active {
+    outline: none;
+  }
+  
+  a:focus,
+  a:active {
+    outline: none;
+  }
+  
+  nav,
+  footer,
+  header,
+  aside {
+    display: block;
+  }
+  
+  html,
+  body {
+    
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 50.32px;
+    font-size: 30px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Geometria';
+    color: #465D71;
+
+  }
+  img {
+    display: block;
+}
+  input,
+  button,
+  textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1{
+    font-size: 40px;
+    font-weight: 800;
+  }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: inherit;
+    font-weight: 400;
+  }
+
+
+
+.wrapper {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+    
+}
+
+
+/* ---------------------------- heades objets ------------------------  */
+.header {
+  width: 100%;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  align-items: center;
+  padding: 0 7vw;
+}
+
+.logo {
+  max-height: 100px; /* Maximum height of the logo */
+}
+
+.logo img {
+  height: auto;
+  max-height: 100px; /* Maximum height of the logo */
+  width: auto;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #465D71;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.icon-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #465D71;
+  margin: 6px 0;
+}
+
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1024px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: -0.5em 0 .3em rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    animation: slideInFromRight_menu  0.5s ease forwards;
+  }
+
+  .menu.active {
+    display: block;
+    width: 50%;
+    height: 90%;
+
+    background-color: #8EC640;
+  }
+
+  .menu.active ul{
+    flex-direction: column;
+    gap: 20px;
+
+    align-items: center;
+    padding-top: 20%;
+  }
+  .menu.active ul li a{
+    color: white;
+    font-size: 30px;
+  }
+
+
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon.active .icon-bar {
+    background-color: #465D71;
+  }
+  .logo img {
+    height: 40px; /* Keep the same fixed height */
+  }
+
+  .menu {
+    /* ... existing styles ... */
+    transition: transform 0.3s ease;
+    transform: translateX(100%); /* Start with the menu off-screen */
+  }
+  
+  /* ... existing styles ... */
+  
+  /* Apply the animation only when the menu becomes active */
+  .menu.active {
+    transform: translateX(0);
+  }
+  
+}
+
+@media (max-width: 1280px) {
+  .header {
+    height: 100px;
+    padding: 0 5vw;
+  }
+  .menu li a {
+    font-size: 1.4vw;
+  
+  }
+
+  .menu.closing {
+    animation: slideOutToRight 0.3s ease forwards; /* Apply the new animation */
+  }
+
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .menu.active {
+    display: block;
+    width: 75%;
+    height: 90%;
+
+    background-color: #8EC640;
+  }
+  .menu.active ul li a{
+
+    font-size: 20px;
+  }
+}
+
+@keyframes slideInFromRight_menu {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight_menu {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* 
+------------------------------- first block --------------------------------------*/
+
+.first_block{
+  width: 100%;
+  background-color: #465D71;
+  height: 90vh;
+
+}
+
+.main_info{
+  width: 1198px;
+  margin: 0 auto;
+
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%) rotateZ(45deg);
+  }
+  100% {
+    transform: translateX(0) rotateZ(45deg);
+  }
+}
+
+.style_image {
+  width: 62.8vh; 
+  height: 62.8vh;
+  position: absolute; 
+  right: calc( 0% - 31.3vh);
+  top: 13.4vh;
+  background-color: #8EC640;
+  display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+  padding: 15px;
+  animation: slideInFromRight 0.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.egl_img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; 
+  opacity: 0;  
+  animation: fadeIn 0.5s forwards;
+
+}
+
+.egl_img {
+  transform: rotateZ(-45deg);
+  opacity: 0;  
+  animation: fadeIn 0.5s forwards;
+}
+.egl_img:nth-child(1) {
+  animation-delay: 0.9s;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.egl_img:nth-child(2) {
+  animation-delay: 1.9s;
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+}
+
+.egl_img:nth-child(3) {
+  animation-delay: 1.2s;
+  grid-row: 3 / 3;
+  grid-column: 2 / 3;
+}
+
+.egl_img:nth-child(4) {
+  animation-delay: 1.8s;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.egl_img:nth-child(5) {
+  animation-delay: 1.5s;
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+}
+
+.egl_img:nth-child(6) {
+  animation-delay: 0.6s;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.elco_something {
+  width: 29.9vh;
+  height: 29.9vh;
+  position: absolute;
+  background-color: #8EC640;
+  top: 51.3vh;
+  left: 55.5vw;
+  animation: slideInFromRight 0.5s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elco_something img {
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  transform: rotate(-45deg);
+}
+
+/* Optional: Add a hover effect to see the rotation smoothly, if desired */
+
+.title_block{
+  display: flex;
+  color: white;
+  padding-top: 24.84vh;
+}
+
+.main_screen_logo img{
+  max-width: 100%; 
+  height: auto;
+}
+
+.meet{
+  font-family: 'Geometria-Medium';
+  line-height: 57.45px;
+  font-size: 63px;
+
+}
+
+.meet span{
+  color: #8EC640;
+}
+
+.main_info_block{
+  color: white;
+  line-height: 50.32px;
+  font-size: 40px;
+  font-family: 'Geometria-Thin';
+  margin-top: 105px;
+}
+
+.main_info_block span{
+  font-family: 'Geometria-Medium';
+}
+
+.programm_button{
+  padding-top: 92px;
+  display: inline-block;
+}
+
+.programm_button button {
+  background-color: #8EC640;   
+  color: white;  
+  border: none;  
+  padding: 10px 51px;   
+  position: relative;   
+  cursor: pointer;   
+  transition: all 0.3s;   
+  font-size: 25px;   
+  outline: none;   
+  width: 305px;
+  height: 60px;
+  font-family: 'Geometria-Bold';
+  text-align: left;
+}
+
+.programm_button button::after {
+  content: url('assets/errow.svg');   
+  position: absolute;
+  right: 22px;   
+  top: 50%;   
+  transform: translateY(-50%);   
+  transition: all 0.3s;   
+}
+
+/* Animation for arrow on hover */
+.programm_button button:hover::after {
+  right: 10px;  
+}
+
+
+@media (max-width: 1280px) {
+  .first_block{
+    padding: 0 41px;
+  }
+
+  .elco_something{
+    width: 25.9vh;
+    height: 25.9vh;
+  
+    top: 51.3vh;
+    left: 55.5vw;
+   
+  }
+  .elco_something img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+
+  .title_block{
+    padding-top: 20vh;
+  }
+
+  .main_screen_logo{
+    width: 30vw; 
+    height: auto;
+  }
+  
+  .meet{
+    font-size: 4vw;
+    line-height: 45.45px;
+  }
+
+ }
+
+ @media (max-width: 1024px) {
+  .elco_something{
+    width: 25.9vh;
+    height: 25.9vh;
+  
+    top: 45.3vh;
+    left: 50.5vw;
+  
+ }
+ .main_info_block{
+  line-height: 37.75px;
+  font-size: 30px;
+  font-family: 'Geometria-Thin';
+  margin-top: 125px;
+}
+
+ }
+
+ @media (max-width: 768px) {
+  .title_block{
+    flex-direction: column;
+    padding-top: 5.84vh;
+  }
+  .elco_something{
+    width: 15vh;
+    height: 15vh;
+  
+    top: 37vh;
+    left: 12vw;
+  
+ }
+ .meet{
+  font-size: 3.5vh;
+  padding-top: 3vh;
+  line-height: 3vh;
+ }
+ .main_info_block{
+  line-height: 37.75px;
+  font-size: 2.5vh;
+  line-height: 3vh;
+  margin-top: 40vh;
+}
+
+.style_image {
+  width: 40vh; 
+  height: 40vh;
+  right: calc( 0% - 20.3vh);
+  top: 10.5vh;
+
+  }
+  .first_block{
+    padding: 0 20px;
+    height: 90vh;
+
+  }
+  .main_screen_logo{
+    width: 50vw;
+  }
+  .programm_button{
+    padding-top: 7vh;
+  }
+  
+  .programm_button button {
+    padding: 0.5vh 2vh;   
+    font-size: 1.7vh;    
+    width: 22vh;
+    height: 5vh;
+
+  }
+  .programm_button button::after {
+    content: url('assets/errow.svg');   
+    position: absolute;
+    right: 22px;   
+    top: 55%;   
+    transform: translateY(-50%);   
+    transition: all 0.3s;   
+  }
+
+ }
+
+
+
+/* ------------------------ second_block ------------------------  */
+
+.second_block{
+  width: 100vw;
+
+
+  color: #465D71;
+  position: relative;
+}
+
+.second_block_content{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.second_block_info{
+  margin-top: 12.23vh;
+  margin-bottom: 10vh;
+  
+}
+
+.secont_block_title{
+  font-family: 'Geometria-Medium';
+  font-size: 50px;
+}
+
+.text_b2{
+  width: 100%;
+  font-size: 30px;
+  line-height: 37.74px;
+  margin-top: 60px;
+}
+
+.big_text_b2{
+  font-family: 'Geometria-Medium';
+  color: #8EC640;
+  font-size: 197px;
+  line-height: 171.98px;
+  margin-top: 78px;
+}
+
+.second.text_b2{
+  margin-top: 78px;
+}
+.square_fly {
+  border: 2px solid #8EC640;  /* Green border */
+  position: absolute;
+}
+
+.secont_block_title, .text_b2 {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s 0.5s, transform 0.5s 0.5s;  /* Added delay here */
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1280px) {
+  .second_block_content{
+    padding: 0 40px;
+  }
+
+  .big_text_b2{
+    font-size: 14.5vw;
+    line-height: 150px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+
+  .big_text_b2{
+    font-size: 14.5vw;
+    line-height: 135px;
+    margin-top: 70px;
+  }
+
+  .second.text_b2{
+    margin-top: 70px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .second_block_content{
+    padding: 0 20px;
+  }
+  .text_b2{
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .big_text_b2.appear{
+    font-size: 14vw;
+    line-height: 9vh;
+    margin-top: 40px;
+  }
+  .second.text_b2{
+    margin-top: 40px;
+  }
+
+  .secont_block_title.appear{
+    font-size: 25px;
+
+  }
+
+  .second_block_info{
+    margin-top: 45px;
+  }
+  .firs.text_b2.appear{
+    margin-top: 15px;
+  }
+
+}
+
+
+
+/* ------------------- sqeare movving  -----------------*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100vw) rotateZ(45deg);;
+  }
+  100% {
+    transform: translateX(0) rotateZ(45deg);;
+  }
+}
+
+@keyframes pulsate {
+  0%, 100% {
+      transform: scale(1) rotateZ(45deg);;
+  }
+  50% {
+      transform: scale(1.1) rotateZ(45deg);;
+  }
+}
+
+@keyframes rotate {
+  0%, 100% {
+      transform: rotate(0deg) rotateZ(45deg);;
+  }
+  50% {
+      transform: rotate(640deg) rotateZ(45deg);;
+  }
+}
+.square_fly{
+  animation-duration: 1s; /* Duration for sliding in */
+  animation-fill-mode: forwards; /* Retain the style values after the animation finishes */
+  position: absolute;
+}
+
+/* First big square on the left */
+.square_fly:nth-child(1) {
+  width: 13vw;
+  height: 13vw;
+
+  top: 26.18vh;
+  left: calc( 0% - 12.1vh);
+}
+
+/* Small square on the left below the first big square */
+.square_fly:nth-child(2) {
+  width: 7vw;
+  height: 7vw;
+
+  top: 60.28vh;
+  left: calc( 0% + 1vh);
+}
+
+/* Big square on the right */
+.square_fly:nth-child(3) {
+  width: 13vw;
+  height: 13vw;
+  right: calc( 0% -  5vh);
+  top: 26.18vh;
+  transform: translateY(-50%); /* Center vertically */
+}
+
+.square_fly:nth-child(1), .square_fly:nth-child(2) {
+  animation: slideInFromLeft 0.5s forwards, pulsate 2s infinite 0.5s;
+}
+
+.square_fly:nth-child(3) {
+  animation: slideInFromRight 0.5s forwards, pulsate 2s infinite 0.5s;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+  .square_fly {
+      display: none;  /* Hide on screens smaller than 1280px */
+  }
+}
+
+
+/* -------------------- third_block -------------------- */
+@keyframes slideInFromRight_green_dash {
+  0% {
+    right: calc( 0% - 30vh);
+    top: calc( 0% - 10vh);
+      opacity: 1;
+  }
+  100% {
+    right: calc( 0% - 10vh);
+    top: calc( 0% - 10vh);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight_green_point {
+  0% {
+    right: calc( 0% - 30vh);
+      opacity: 1;
+      top: calc( 0% + 15vh);
+  }
+  100% {
+    right: calc( 0% + 10vh);
+      opacity: 1;
+      top: calc( 0% + 15vh);
+  }
+}
+
+
+.third_block{
+  position: relative;
+
+}
+.green_dash{
+  width: 20vh;
+  height: 20vh;
+  position: absolute;
+  background-color: #8EC640;
+
+  transform: rotate(45deg);
+
+
+
+}
+
+.green_point{
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  background-color: #8EC640;
+
+  transform: rotate(45deg);
+
+}
+
+.b3 {
+  display: flex;
+  width: 100%;
+  height: auto;
+
+}
+
+.two_image {
+  display: flex;
+  flex: 1;
+}
+
+.left_image, .right_image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.one_image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right_image.some_green {
+  background-color: #8EC640;
+  position: relative;
+}
+
+.left_image img, .one_image img {
+  width: 100%; /* Allow the image to scale up to 100% width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: none; /* Removing the max-width restriction */
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.right_image.some_green img {
+  width: 50%; /* Keep its original width */
+  height: auto; /* Keep its original height */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right_image.some_green.rigth_one img {
+  width: 80%; /* Keep its original width */
+
+}
+
+
+@media screen and (max-width: 1280px) {
+  
+@keyframes slideInFromRight_green_point {
+  0% {
+    right: calc( 0% - 30vh);
+      opacity: 1;
+      top: calc( 0% + 15vh);
+  }
+  100% {
+    right: calc( 0% + 5vh);
+      opacity: 1;
+      top: calc( 0% + 15vh);
+  }
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .green_dash{
+    width: 14vh;
+    height: 14vh;
+    position: absolute;
+    background-color: #8EC640;
+    transform: rotate(45deg);
+  }
+  
+  .green_point{
+    width: 6vh;
+    height: 6vh;
+    position: absolute;
+    background-color: #8EC640;
+    transform: rotate(45deg);
+  }
+
+  @keyframes slideInFromRight_green_dash {
+    0% {
+      right: calc( 0% - 30vh);
+      top: calc( 0% - 10vh);
+        opacity: 1;
+    }
+    100% {
+      right: calc( 0% - 7vh);
+      top: calc( 0% - 7vh);
+        opacity: 1;
+    }
+  }
+
+  @keyframes slideInFromRight_green_point {
+    0% {
+      right: calc( 0% - 30vh);
+        opacity: 1;
+        top: calc( 0% + 15vh);
+    }
+    100% {
+      right: calc( 0% + 3vh);
+        opacity: 1;
+        top: calc( 0% + 10vh);
+    }
+  }
+  }
+
+
+@media screen and (max-width: 768px) {
+  .b3{
+    flex-direction: column;
+  }
+  .row_2.b3{
+    flex-direction: column-reverse;
+  }
+
+  .green_dash{
+    display: none;
+  }
+  .green_point{
+    display: none;
+  }
+
+}
+
+/* -------------------------------- forth block --------------------- */
+
+.forth_block {
+  position: relative;
+  width: 100%;
+
+}
+
+
+.squeare_big {
+  width: 12vw;
+  height: 12vw;
+
+  background-color: #8EC640;
+  position: absolute;
+  right: calc( 0% -  6vw);
+  transform: rotate(45deg);
+  top: 40vh;
+
+}
+
+
+.squeare_big_2{
+  width: 12vw;
+  height: 12vw;
+  border: 3px solid #8EC640;
+  position: absolute;
+  left: calc( 0% -  6vw);
+  transform: rotate(45deg);
+  top: 800px;
+}
+
+
+.squeare_small {
+  width: 5vw;
+  height: 5vw;
+  border: 3px solid #8EC640;
+  position: absolute;
+
+
+  transform: rotate(45deg);
+  animation: moveSmallSquare 3s linear infinite;
+}
+
+@keyframes moveSmallSquare {
+  0% {
+    top: 75vh;
+      right: 1vw;
+  }
+  50% {
+    top: 66vh;
+      right: 5vw;
+  }
+  100% {
+    top: 75vh;
+      right: 1vw;
+  }
+}
+
+.forth_block_content{
+  max-width: 1198px;
+  margin: 0 auto;
+}
+
+.forth_block_info{
+  padding-top: 150px;
+  width: 100%;
+  
+}
+
+.forth_block_info h2{
+  font-size: 50px;
+  font-family: 'Geometria-Medium';
+  line-height: 62.9px;
+}
+
+.time_info_block{
+ width: 100%;
+ margin-top: 32px;
+}
+
+.forth_block_text{
+  font-family: 'Geometria';
+  font-size: 30px;
+  line-height: 37.74px;
+  margin: 50px 0px 65px 0px;
+}
+
+.green_line_4b{
+  width: 0; 
+  height: 1px;
+  background-color: #8EC640;
+  margin-top: 32px;
+  position: relative;
+  animation: slideInFromLeft_line 0.5s forwards;
+}
+
+@keyframes slideInFromLeft_line {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%; /* Expand to full width */
+  }
+}
+
+.timezone{
+  margin-top: 32px;
+}
+.action_row{
+  display: flex;
+  align-items: center;
+}
+
+.subtitle_time{
+  line-height: 37.74px;
+  font-size: 30px;
+  font-family: 'Geometria';
+}
+
+.time_column{
+  font-family: 'Geometria-Medium';
+  color: white;
+  background-color: #8EC640;
+  width: 146px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 25.16px;
+}
+.lecture_column{
+  font-family: 'Geometria';
+  margin-left: 42px;
+  font-size: 30px;
+  line-height: 37.74px;
+  color:#465D71;
+}
+
+
+.dress_code{
+  display: flex;
+  margin-top: 215px;
+  align-items: center;
+}
+.dress_main{
+  font-family: 'Geometria-Medium';
+  font-size: 50px;
+  line-height: 63px;
+  color: #465D71;
+  flex: 1 0 auto;
+}
+.dress_green{
+  color: #8EC640;
+  font-size: 30px;
+  line-height: 38px;
+  padding-top: 15px;
+  margin-left: 51px;
+}
+
+@media (max-width: 1500px) {
+
+  .squeare_big_2{
+    width: 9vw;
+    height: 9vw;
+    left: calc( 0% -  4.5vw);
+  }
+  .squeare_small{
+    display: none;
+  }
+  .squeare_big{
+    width: 9vw;
+    height: 9vw;
+    right: calc( 0% -  4.5vw);
+}
+}
+
+@media (max-width: 1380px) {
+.forth_block_content{
+  margin: 0 40px;
+}
+  .squeare_big_2{
+display: none;
+  }
+
+  .squeare_big{
+    display: none;
+
+  }
+}
+
+@media (max-width: 760px) {
+  .dress_code{
+    flex-direction: column;
+  align-items: flex-start;
+  }
+  .dress_green{
+    margin: 0;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+  .forth_block_info{
+    padding-top: 54px;
+  }
+.forth_block_info h2{
+  font-size: 25px;
+}
+.forth_block_text{
+  margin-top: 15px;
+}
+
+.time_info_block{
+  margin-top: 20px;
+}
+
+.forth_block_text{
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.subtitle_time{
+  font-size: 15px;
+  line-height: 18px;
+
+}
+
+.time_column{
+  font-size: 10px;
+  line-height: 12.5px;
+  width: 73px;
+  height: 21px;
+}
+.lecture_column{
+  font-size: 15px;
+  line-height: 18px;
+  margin-left: 20px;
+}
+.timezone{
+  margin-top: 20px;
+}
+.green_line_4b{
+  margin-top: 20px;
+
+}
+.dress_main{
+  font-size: 25px;
+}
+  .dress_green{
+    font-size: 15px;
+    line-height: 18px;
+    margin-left: 20px;
+  }
+  .forth_block_content{
+    margin: 0px 20px;
+  }
+
+  .dress_code{
+    flex-direction: row;
+  }
+  .dress_code{
+    margin-top: 75px;
+  }
+}
+
+
+/* -------------------------- fifth block --------------------------- */
+
+.fifth_block{
+  width: 100vw;
+
+  margin-top: 100px;
+}
+
+
+.image_row_5{
+  display: flex;
+}
+
+
+.first_img_5, .second_img_5 {
+  width: 50%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first_img_5{
+  position: relative;
+}
+
+.first_img_5 img, .second_img_5 img {
+  width: 100%; /* Allow the image to scale up to 100% width of its container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: none; /* Removing the max-width restriction */
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.first_img_5::after{
+  content: "LOCATION";
+  font-family: 'Geometria-Medium';
+  
+  position: absolute;
+  color: white;
+  font-size: 7vw;
+  top:8vh;
+  
+}
+
+.first_img_5::before{
+  content: "Birini Manor";
+  font-family: 'Geometria';
+  color: white;
+  font-size: 2.7vw;
+  position: absolute;
+  bottom:25px;
+  right: 55px;
+}
+
+
+@media (max-width: 1024px) {
+  .image_row_5{
+    flex-direction: column;
+  }
+
+  .first_img_5, .second_img_5 {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first_img_5::after{
+    content: "LOCATION";
+    font-family: 'Geometria-Medium';
+    position: absolute;
+    color: white;
+    font-size: 11vw;
+    top:8vh;
+    
+  }
+  
+  .first_img_5::before{
+    content: "Birini Manor";
+    font-size: 3.7vw;
+    right: 40px;
+    bottom: 50px;
+  }
+  
+}
+
+@media (max-width: 500px){
+  .fifth_block{
+    margin-top: 25px;
+  }
+
+  .first_img_5::after{
+    content: "LOCATION";
+    font-family: 'Geometria-Medium';
+    font-size: 60px;
+    top:35px;
+  }
+
+  .first_img_5::before{
+    content: "Birini Manor";
+    font-size: 25px;
+    right: 20px;
+    bottom: 17px;
+  }
+}
+
+
+
+
+
+/* --------------------------------- six_block ----------------------- */
+
+.sixth_block_content{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.six_block_data{
+  margin: 0px 40px;
+}
+.sixth_block_topic{
+  font-family: 'Geometria-Medium';
+  font-size: 50px;
+  margin-bottom: 100px;
+  margin-top: 156px;
+
+}
+.person_block{
+  margin-top: 50px;
+}
+
+.person_row{
+  display: flex;
+  gap: 100px;
+  width: 100%;
+}
+.person_photo_col{
+  flex: 0 0 auto;
+  width: 280px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensure image stays within container */
+}
+.person_photo_col img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Scale the image while maintaining aspect ratio */
+  object-position: center; /* Center the image within the container */
+}
+
+.pesron_title{
+  display: flex;
+  text-transform: uppercase;
+
+}
+
+
+.pesron_title.to_end{
+  justify-content: flex-end;
+}
+
+.person_sweqre{
+  width: 15px;
+  height: 15px;
+  transform: rotate(-45deg);
+  background-color: #8EC640;
+  margin-right: 21px;
+  flex: 0 0 auto;
+  margin-top: 10px;
+}
+
+.person_main_text{
+  font-family: 'Geometria-Medium';
+  font-size: 30px;
+  line-height: 38px;
+  color: #465D71;
+  max-width: 90%;
+  margin: 0;
+
+
+}
+
+
+
+.person_text{
+  font-size: 25px;
+  line-height: 31.5px;
+  margin-top: 25px;
+}
+
+.peson_name{
+  font-family: 'Geometria-Bold';
+  
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+.person_info{
+  font-size: 20px;
+  line-height: 20px;
+
+  margin-top: 9px;
+}
+
+.flip_person{
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.green_line_4b.line_6_b{
+  margin-top: 60px;
+}
+
+.person_block:nth-child(5){
+  margin-bottom: 90px;
+
+}
+
+@media (max-width:716px){
+  .six_block_data{
+    margin: 0 20px;
+  }
+  .sixth_block_topic{
+    font-size: 25px;
+    line-height: 31px;
+    margin: 45px 0px 40px;
+  }
+  .person_block{
+    margin-top: 25px;
+  }
+  .person_photo_col{
+    width: 100px;
+    height: 114px;
+  }
+  .person_row{
+    gap: 25px;
+  }
+  .person_main_text{
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .person_text{
+    font-size: 12.5px;
+    line-height: 15px;
+
+  }
+  .peson_name{
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 12.5px;
+  }
+  .person_info{
+    font-size: 10px;
+    line-height: 12.5px;
+  }
+  .person_sweqre{
+    width: 7px;
+    height: 7px;
+    transform: rotate(-45deg);
+    background-color: #8EC640;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    margin-top: 5px;
+  }
+  .green_line_4b.line_6_b{
+    margin-top: 30px;
+  }
+  .person_block:nth-child(5){
+    margin-bottom: 45px;
+  }
+}
+
+
+/* ------------------------- seventh block ---------------------- */
+.seventh_block{
+  background-color: #8EC640;
+  padding-bottom: 140px;
+}
+.seventh_block_content{
+  max-width: 1200px;
+  
+  margin: 0 auto;
+  padding-top: 135px;
+}
+
+.seventh_block_titile{
+  font-family: 'Geometria-Medium';
+  font-size: 50px;
+  margin-bottom: 90px;
+  color: white;
+}
+.sevent_block_data{
+  margin: 0 20px;
+}
+
+.logo_table{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  position: relative; 
+}
+
+.logo_table::after {
+  content: '';
+  flex: 1 0 calc(20% - 10px); /* Adjust the width to match the logo_item width */
+  margin-bottom: 20px;
+}
+
+.logo_item{
+  flex: 0 1 auto; /* Prevent items from growing and shrinking */
+  
+  background-color: white;
+  max-width: 210px;
+  max-height: 80px;
+    width: 100%;
+
+    height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Add some padding around each logo */
+  margin: 10px; /* Add margin between logo items */
+  margin-bottom: 20px;
+}
+
+.logo_item img {
+
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  
+}
+
+
+
+/* Adjust the number of logos per row as per your requirements */
+@media (min-width: 1021px) {
+  .logo_item {
+      width: calc(20% - 20px); /* 20% for 5 logos in a row */
+  }
+}
+
+@media (max-width: 1020px) and (min-width: 768px) {
+  .logo_item {
+      width: calc(25% - 20px); /* 25% for 4 logos in a row */
+  }
+}
+
+@media (max-width: 767px)  {
+  .sevent_block_data{
+    margin: 0 10px;
+  }
+  .logo_table::after {
+    content: '';
+    flex: 1 0 calc(20% - 5px); /* Adjust the width to match the logo_item width */
+    margin-bottom: 20px;
+  }
+  .logo_table{
+    margin: 0;
+  }
+  .logo_item{
+    flex: 1 0 auto; /* Prevent items from growing and shrinking */
+    
+    background-color: white;
+    max-width: 210px;
+    max-height: 60px;
+    width: calc(33% - 20px); /* 25% for 4 logos in a row */
+      height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px; /* Add margin between logo items */
+    margin-bottom: 5px;
+    padding: 15px;
+
+  }
+  
+  .logo_item img {
+  
+      max-width: auto;
+      max-height: 30px;
+      object-fit: contain;
+    
+  }
+  .seventh_block_titile{
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 25px;
+  }
+  .sevent_block_data{
+    
+  }
+  .seventh_block_content{
+
+    padding-top: 45px;
+  }
+  .seventh_block{
+    padding-bottom: 50px;
+  }
+}
+
+
+
+
+
+ /* --------------------------- eigth block ----------------------- */
+
+.eigth_block{
+  width: 100%;
+
+  position: relative
+}
+
+.draw_square {
+  width: 270px;
+  height: 270px;
+  position: absolute;
+  stroke: #8EC640;
+  stroke-width: 3;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 2s ease-out;
+  animation-fill-mode: forwards;
+}
+
+
+
+path {
+  stroke: #8EC640;
+  stroke-width: 3;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+}
+
+/* Adjust the animation to remove fill mode */
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+.draw_square:nth-child(1) {
+  right: 150px;
+  top: 120px;
+  animation-delay: 0.7s; /* Adjust the delay as needed */
+}
+
+.draw_square:nth-child(2) {
+  left: -30px;
+  top: 825px;
+  animation-delay: 0.7s; /* Adjust the delay as needed */
+}
+
+.draw_square:nth-child(3) {
+  right: -10px;
+  top: 1160px;
+  animation-delay: 0.7s; /* Adjust the delay as needed */
+}
+
+.draw_square:nth-child(4) {
+  right: 30px;
+  top: 130px;
+  animation-delay: 0.7s; /* Adjust the delay as needed */
+  display: none;
+}
+
+.big_squeare_8block{
+  height: 40vh;
+  width: 40vh;
+  position: absolute;
+  background-color: #8EC640;
+  right: -20vh;
+  top: 30vh;
+  transform: rotate(45deg);
+}
+
+.eigth_block_conten{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.eigth_block_data{
+  margin: 150px 40px 0;
+
+}
+.eigtht_title{
+  font-size: 50px;
+  line-height: 31.5px;
+}
+
+.transport_info{
+  margin-top: 70px;
+  font-size: 25px;
+  
+}
+
+.transport_info.secont_info{
+  margin-top: 90px;
+}
+
+.transport_laction{
+  margin-top: 30px;
+  line-height: 31px;
+}
+
+.transport_link{
+  margin-top: 25px;
+  line-height: 31px;
+}
+
+.transport_title{
+  font-size: 30px;
+  font-family: 'Geometria-Medium';
+  text-transform: uppercase;
+}
+.transport_point{
+  margin-top: 50px;
+}
+
+.transport_row{
+  display: flex;
+}
+.transport_squer{
+  flex: 1 1 auto;
+  width: 15px;
+  height: 15px;
+  background-color: #8EC640;
+  margin-right: 45px;
+  margin-top: 15px;
+  transform: rotate(45deg);
+
+}
+
+.transport_text_col{
+  width: 100%;
+  line-height: 32px;
+  font-size: 25px;
+}
+
+.transpot_bottom_line{
+  margin: 200px 0 200px;
+}
+
+.green_line_4b.line_8_b{
+  margin: 0;
+}
+
+.transport_p_s{
+  font-family: 'Geometria-Medium';
+  margin-top: 60px;
+  font-size: 25px;
+  line-height: 31.45px;
+}
+
+.transport_text_col.transport_green{
+  color: #8EC640;
+}
+
+@media (max-width: 1500px) {
+  .draw_square:nth-child(3){
+    display: none;
+  }
+  .big_squeare_8block{
+    height: 35vh;
+    width: 35vh;
+    position: absolute;
+    background-color: #8EC640;
+    right: -17.5vh;
+    top: 30vh;
+    transform: rotate(45deg);
+  }
+}
+
+@media (max-width: 1430px) {
+  .draw_square:nth-child(2){
+    display: none;
+  }
+
+}
+
+@media (max-width: 1280px) {
+  .draw_square:nth-child(1){
+    display: none;
+  }
+  .draw_square:nth-child(4){
+    display: block;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .draw_square:nth-child(4){
+    display: none;
+  }
+
+  .big_squeare_8block{
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+  .eigth_block_data{
+    margin: 45px 20px 0;
+  }
+  .eigtht_title{
+    font-size: 20px;
+    line-height: 25px;
+
+  }
+  .transport_info{
+    margin-top: 36px;
+  }
+  .transport_info.secont_info{
+    margin-top: 30px;
+  }
+.transport_title{
+  font-size: 15px;
+  line-height: 18px;
+}
+.transport_laction{
+  font-size: 12.5px;
+  line-height: 16px;
+  margin-top: 15px;
+
+}
+
+.transport_link{
+  font-size: 12.5px;
+  line-height: 16px;
+  margin-top: 15px;
+}
+.transport_text_col {
+  font-size: 12.5px;
+  line-height: 16px;
+}
+
+.transport_squer{
+  flex: 0 0 auto;
+  width: 7px;
+  height: 7px;
+  background-color: #8EC640;
+  margin-right: 20px;
+  margin-top: 5px;
+  transform: rotate(45deg);
+
+}
+
+.transpot_bottom_line{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+.transport_p_s{
+  margin-top: 35px;
+  font-size: 12.5px;
+  line-height: 16px;
+}
+}
+/* ----------------- contact block ---------------  */
+
+.contact_block{
+  width: 100%;
+  background-color: #465D71;
+  color: white;
+  font-size: 25px;
+}
+
+.contact_info{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact_data{
+  padding: 17vh 0 20vh;
+  margin: 0 40px;
+}
+
+.contact_row{
+  display: flex;
+  margin-top: 60px;
+}
+
+.contact_title{
+  font-size: 50px;
+}
+
+.cont_col{
+  font-size: 25px;
+  line-height: 31px;
+  margin-right: 5vw;
+}
+
+.green_line_4b.line_contacts{
+  margin-top: 110px;
+}
+
+.cont_address{
+  margin-top: 50px;
+}
+
+.cont_add_num{
+  margin-top: 15px;
+  width: 60%;
+}
+
+.organis_col{
+  font-size: 30px;
+  line-height: 37px;
+}
+@media (max-width: 760px){
+  .contact_data{
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+  .contact_row{
+    flex-direction: column;
+  }
+  .contact_title{
+    font-size: 25px;
+  }
+  .contact_text{
+    font-size: 12.5px;
+    line-height: 16px;
+  }
+  .green_line_4b.line_contacts{
+    max-width: 65%;
+    margin-top: 35px;
+  }
+  .add_tit{
+    font-size: 12.5px;
+    line-height: 16px;
+  }
+  .cont_add_num{
+    font-size: 12.5px;
+    line-height: 16px;
+  }
+  .organis_col{
+    font-size: 12.5px;
+    line-height: 16px;
+    margin-top: 75px;
+  }
+}
+
+/* ------------------- last block ------------- */
+
+.last_block{
+  width: 100%;
+  position: relative;
+  padding: 38vh 0;
+
+}
+
+.last_content{
+  margin: 0 auto;
+  width: 85vw;
+}
+
+.lats_text{
+  font-size: 133px;
+  font-family: 'Geometria-Bold';
+  background-image: url('./assets/birinu_pils_no-ezera-Medium\ 2.jpg');
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 148.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.last_req{
+  position: absolute;
+  transform: rotate(45deg);
+
+}
+
+.last_req:nth-child(2){
+  width: 28vh;
+  height: 28vh;
+  background-color: #8EC640;
+  top:28vh;
+  left: calc( 0% - 14vh);
+
+}
+
+.last_req:nth-child(3){
+  width: 24vh;
+  height: 24vh;
+  border: 3px solid #8EC640;
+  top:60vh;
+  right: calc( 0% - 12vh);
+
+}
+
+
+.last_req:nth-child(4){
+  width: 16vh;
+  height: 16vh;
+  border: 3px solid #8EC640;
+  top:68vh;
+  left: calc( 0% + 1vh);
+  animation: moveSmal_last_lSquare 3s linear infinite;
+
+}
+
+@keyframes moveSmal_last_lSquare {
+  0% {
+    top:68vh;
+    left: calc( 0% + 1vh);
+  }
+  50% {
+    top:60vh;
+    left: calc( 0% + 10vh);
+  }
+  100% {
+    top:68vh;
+    left: calc( 0% + 1vh);
+  }
+}
+
+.last_req:nth-child(5){
+  width: 12vh;
+  height: 12vh;
+  background-color: #8EC640;
+
+  animation: moveSmal_last_lSquare_2 3s linear infinite;
+
+}
+
+@keyframes moveSmal_last_lSquare_2 {
+  0% {
+    top:41vh;
+    right: calc( 0% + 1vh);
+  }
+  50% {
+    top:50vh;
+    right: calc( 0% + 10vh);
+  }
+  100% {
+    top:41vh;
+    right: calc( 0% + 1vh);
+  }
+}
+
+@media (max-width: 1648px) {
+
+  .last_req{
+    display: none;
+  }
+
+  .last_content{
+    margin: 0 auto;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  .last_block{
+    padding: 30vh 0;
+  
+  }
+  
+
+  .last_data{
+    margin: 0 40px;
+  }
+
+  .lats_text{
+    font-size: 10.4vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .last_block{
+    padding: 20vh 0;
+  
+  }
+
+  .last_data{
+    margin: 0 20px;
+  }
+
+  .lats_text{
+    font-size: 9vw;
+    line-height: 15vh;
+  }
+}
+
+
+@media (max-width: 500px){
+
+  .last_block{
+    width: 100%;
+    position: relative;
+    padding: 65px 0;
+  
+  }
+  
+  .last_content{
+    margin: 0 auto;
+    width: 100vw;
+  }
+.lats_text{
+  font-size: 9vw;
+  line-height: 45px;
+}
+}
+
+
+.footer{
+  width: 100%;
+  height: 122px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7vw;
+  align-items: center;
+}
+
+.menu_bottm ul{
+  display: flex;
+  gap: 40px;
+}
+
+.menu_bottm ul li a{
+font-size: 18px;
+}
+
+@media (max-width:1280px){
+  .footer{
+    width: 100%;
+
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .menu_bottm ul{
+    display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+  }
+}
+  @media (max-width:800px){
+
+    .menu_bottm ul li a{
+      font-size: 12.5px;
+    }
+}
