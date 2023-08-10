@@ -246,13 +246,16 @@
 }
 
 .logo {
+display: flex;
   max-height: 100px; /* Maximum height of the logo */
+  align-items: center;
 }
 
 .logo img {
-  height: auto;
-  max-height: 100px; /* Maximum height of the logo */
-  width: auto;
+  height: auto; /* Automatically adjust height to maintain aspect ratio */
+  max-height: 100px; /* Limit the maximum height of the image */
+  width: auto; /* Automatically adjust width to maintain aspect ratio */
+  max-width: 100%; /* Make sure the image doesn't exceed the container width */
 }
 
 .menu ul {
@@ -270,6 +273,10 @@
   text-transform: uppercase;
 }
 
+.menu li a:hover {
+  color:#8EC640;
+}
+
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -280,8 +287,25 @@
   height: 3px;
   background-color: #465D71;
   margin: 6px 0;
+  border-radius: 5px;
+  transition: transform 0.3s, opacity 0.3s; /* Add transition properties */
 }
 
+.icon-bar:nth-child(2) {
+  width: 15px;
+}
+
+.menu-icon.active .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 4px);
+}
+
+.menu-icon.active .icon-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -4px);
+}
 
 
 /* Responsive Styles */
@@ -290,7 +314,7 @@
   .menu {
     display: none;
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 0px;
     
     background-color: #ffffff;
@@ -303,7 +327,7 @@
   .menu.active {
     display: block;
     width: 50%;
-    height: 90%;
+    height: 100%;
 
     background-color: #8EC640;
   }
@@ -365,16 +389,45 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .logo{
+    width: 75px;
+    height: 20px;
+  }
   .menu.active {
     display: block;
     width: 75%;
-    height: 90%;
+    height: 100%;
 
     background-color: #8EC640;
   }
   .menu.active ul li a{
 
     font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-items: center;
+    padding: 0 8vw;
+    
+  }
+  .menu.active ul {
+
+    align-items:flex-start;
+    padding-left: 40px;
+  }
+
+  .menu.active ul li a:active {
+
+    color: #465D71;
   }
 }
 
@@ -501,8 +554,8 @@
 }
 
 .elco_something {
-  width: 29.9vh;
-  height: 29.9vh;
+  width: 13.9vw;
+  height: 13.9vw;
   position: absolute;
   background-color: #8EC640;
   top: 51.3vh;
@@ -514,8 +567,8 @@
 }
 
 .elco_something img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 72%;
+  max-height: 72%;
   width: auto;
   height: auto;
   transform: rotate(-45deg);
@@ -527,6 +580,9 @@
   display: flex;
   color: white;
   padding-top: 24.84vh;
+  animation: slideInFromLeft_start 1s ease-out 0.5s forwards;
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
 .main_screen_logo img{
@@ -551,6 +607,9 @@
   font-size: 40px;
   font-family: 'Geometria-Thin';
   margin-top: 105px;
+  animation: slideInFromLeft_start 1s ease-out 1s forwards;
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
 .main_info_block span{
@@ -560,6 +619,9 @@
 .programm_button{
   padding-top: 92px;
   display: inline-block;
+  animation: slideInFromLeft_start 1s ease-out 1.5s forwards;
+  opacity: 0;
+  transform: translateX(-20px);
 }
 
 .programm_button button {
@@ -592,6 +654,18 @@
   right: 10px;  
 }
 
+.programm_button button a {
+  width: 100%;
+  height: 100%; 
+  color: white;
+}
+
+@keyframes slideInFromLeft_start {
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
 
 @media (max-width: 1280px) {
   .first_block{
@@ -607,12 +681,13 @@
    
   }
   .elco_something img {
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 60%;
+    max-height: 60%;
   }
 
   .title_block{
     padding-top: 20vh;
+
   }
 
   .main_screen_logo{
@@ -651,13 +726,18 @@
     padding-top: 5.84vh;
   }
   .elco_something{
-    width: 15vh;
-    height: 15vh;
+    width: 17vh;
+    height: 17vh;
   
     top: 37vh;
     left: 12vw;
   
  }
+ .elco_something img {
+  max-width: 70%;
+  max-height: 70%;
+}
+
  .meet{
   font-size: 3.5vh;
   padding-top: 3vh;
@@ -667,7 +747,7 @@
   line-height: 37.75px;
   font-size: 2.5vh;
   line-height: 3vh;
-  margin-top: 40vh;
+  margin-top: 50vh;
 }
 
 .style_image {
@@ -679,14 +759,14 @@
   }
   .first_block{
     padding: 0 20px;
-    height: 90vh;
+    height: 100vh;
 
   }
   .main_screen_logo{
     width: 50vw;
   }
   .programm_button{
-    padding-top: 7vh;
+    padding-top: 3vh;
   }
   
   .programm_button button {
@@ -701,8 +781,8 @@
     position: absolute;
     right: 22px;   
     top: 55%;   
-    transform: translateY(-50%);   
     transition: all 0.3s;   
+    transform: translateY(-50%) scale(0.8); /* Scale down on hover */
   }
 
  }
@@ -1241,6 +1321,8 @@
   display: flex;
   margin-top: 215px;
   align-items: center;
+  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 .dress_main{
   font-family: 'Geometria-Medium';
@@ -1292,6 +1374,7 @@ display: none;
   .dress_code{
     flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 50px;
   }
   .dress_green{
     margin: 0;
@@ -1361,9 +1444,109 @@ display: none;
   }
   .dress_code{
     margin-top: 75px;
+    margin-bottom: 25px;
   }
 }
 
+/* ---------------- PAralax ------------------- */
+.images-container {
+  font-family: 'Geometria-Medium';
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw; 
+  height: 100vh; 
+}
+
+.image-container {
+  flex: 1;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1; 
+}
+
+.location-text, .manor-text {
+  position: absolute;
+  color: white;
+ 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-text {
+  font-size: 7vw;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.manor-text {
+  bottom: 5vh;
+  right: 50px;
+  font-size: 2vw;
+}
+
+#parallax-container .image {
+  width: 120%;
+  height: 120%; 
+  top: -10%; 
+  left: -10%; 
+}
+@media (max-width: 1360px) {
+
+}
+
+@media (max-width: 1020px) {
+  .images-container{
+    height: 120vh; 
+  }
+  .image-container {
+    width: 100%;
+  }
+  .images-container{
+    flex-direction: column;
+  }
+  .manor-text {
+    bottom: 5vh;
+    right: 50px;
+    font-size: 3vw;
+  }
+  .location-text {
+    font-size: 10vw;
+
+  }
+}
+
+@media (max-width: 600px) {
+  .images-container{
+    height: 90vh; 
+  }
+  .image-container {
+    width: 100%;
+  }
+  .images-container{
+    flex-direction: column;
+  }
+  .manor-text {
+    bottom: 2vh;
+    right: 20px;
+    font-size: 3vw;
+  }
+  .location-text {
+    font-size: 15vw;
+    top: 23%;
+  }
+}
 
 /* -------------------------- fifth block --------------------------- */
 
@@ -1488,7 +1671,7 @@ display: none;
 }
 
 .six_block_data{
-  margin: 0px 40px;
+  margin: 0px 0px;
 }
 .sixth_block_topic{
   font-family: 'Geometria-Medium';
@@ -1588,6 +1771,12 @@ display: none;
 .person_block:nth-child(5){
   margin-bottom: 90px;
 
+}
+
+@media (max-width:1360px){
+  .six_block_data{
+    margin: 0px 40px;
+  }
 }
 
 @media (max-width:716px){
@@ -1728,7 +1917,7 @@ display: none;
   }
   .logo_table::after {
     content: '';
-    flex: 1 0 calc(20% - 5px); /* Adjust the width to match the logo_item width */
+    flex: 1 0 calc(33% - 5px); /* Adjust the width to match the logo_item width */
     margin-bottom: 20px;
   }
   .logo_table{
@@ -2092,6 +2281,7 @@ path {
   .contact_data{
     padding-top: 46px;
     padding-bottom: 40px;
+    margin: 0 20px;
   }
   .contact_row{
     flex-direction: column;
@@ -2118,8 +2308,21 @@ path {
   .organis_col{
     font-size: 12.5px;
     line-height: 16px;
-    margin-top: 75px;
+    margin-top: 65px;
   }
+  .cont_address{
+    margin-top: 25px;
+  }
+}
+
+/* ------------------- last green line ------------- */
+
+.last_green_line{
+  width: 100%;
+  height: 1px;
+  margin-bottom: 40px;
+  background-color: #8EC640;
+  
 }
 
 /* ------------------- last block ------------- */
@@ -2291,6 +2494,8 @@ path {
 }
 
 
+/* ----------------- Footer ----------------- */
+
 .footer{
   width: 100%;
   height: 122px;
@@ -2307,6 +2512,11 @@ path {
 
 .menu_bottm ul li a{
 font-size: 18px;
+text-transform: uppercase;
+}
+
+.menu_bottm ul li a:hover{
+  color: #8EC640;
 }
 
 @media (max-width:1280px){
@@ -2315,7 +2525,7 @@ font-size: 18px;
 
     align-items: center;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .menu_bottm ul{
     display: flex;
@@ -2327,5 +2537,8 @@ font-size: 18px;
 
     .menu_bottm ul li a{
       font-size: 12.5px;
+    }
+    .menu_bottm ul li{
+      padding: 0;
     }
 }

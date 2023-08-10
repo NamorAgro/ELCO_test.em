@@ -227,3 +227,34 @@ appearObserver_2.observe(document.querySelector('.green_point'));
 
 
 
+// Parallax effect
+const latsText = document.querySelector('.lats_text');
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const speed = 0.5; // Adjust the parallax speed
+
+    latsText.style.backgroundPositionY = -scrollY * speed + 'px';
+});
+
+
+
+
+
+
+
+
+
+document.addEventListener('scroll', function() {
+    var parallaxContainer = document.getElementById('parallax-container');
+    var locationText = parallaxContainer.querySelector('.location-text');
+    var manorText = parallaxContainer.querySelector('.manor-text');
+    var image = parallaxContainer.querySelector('.image');
+    
+    var containerTop = parallaxContainer.getBoundingClientRect().top;
+    var scrollEffect = containerTop * -0.1; // Negate the value here
+  
+    locationText.style.transform = `translateX(-50%) translateY(${scrollEffect}px)`;
+    manorText.style.transform = `translateY(${scrollEffect}px)`;
+    image.style.transform = `translateY(${scrollEffect * -0.8}px)`; // Apply the effect to the image (adjust the multiplier as needed)
+  });
